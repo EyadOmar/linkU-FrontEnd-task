@@ -1,0 +1,39 @@
+:root {
+  --c-primary: #273d5d;
+  --c-secondary: #d9904e;
+  --c-black: #000;
+  --c-white: #fff;
+
+  --fs-xlg: 2.2rem;
+  --fs-lg: 1.8rem;
+  --fs-md: 1.6rem;
+  --fs-sm: 1.4rem;
+
+  --ff: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-md);
+}
