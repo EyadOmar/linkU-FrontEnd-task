@@ -1,7 +1,7 @@
 :root {
   --c-primary: #273d5d;
   --c-secondary: #d9904e;
-  --c-black: #000;
+  --c-black: #3d3d3d;
   --c-white: #fff;
 
   --fs-xlg: 2.2rem;
@@ -10,6 +10,11 @@
   --fs-sm: 1.4rem;
 
   --ff: 'Roboto', sans-serif;
+
+  --border-r-s: 0.4rem;
+  --border-r-md: 0.7rem;
+  --border-r-lg: 1.2rem;
+  --border-r-50: 50%;
 }
 
 html {
@@ -36,4 +41,13 @@ html {
 body {
   font-family: var(--ff);
   font-size: var(--fs-md);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
 }
