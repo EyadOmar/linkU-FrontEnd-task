@@ -5,8 +5,11 @@
   padding-bottom: 1.5rem;
 }
 
-.category-card {
+.categories-cards a {
   flex-basis: 30%;
+}
+
+.category-card {
   align-items: center;
   gap: 2rem;
   font-size: var(--fs-xlg);
@@ -42,8 +45,10 @@
 }
 
 @media (max-width: 1199px) {
-  .category-card {
+  .categories-cards a {
     flex-basis: 25%;
+  }
+  .category-card {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
