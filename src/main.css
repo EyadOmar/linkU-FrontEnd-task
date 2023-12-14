@@ -26,6 +26,10 @@ html {
   margin-inline: auto;
 }
 
+body {
+  position: relative;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 720px;
@@ -50,4 +54,27 @@ body {
 .flex-between {
   justify-content: space-between;
   align-items: center;
+}
+
+.drop-down-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -300px;
+  background: var(--c-secondary);
+  color: var(--c-primary);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.drop-down-menu.active {
+  top: 20px;
+  opacity: 1;
+}
+.drop-down-menu li {
+  padding: 0.5rem 1rem;
+}
+.drop-down-menu li:not(:last-of-type) {
+  border-bottom: 1px solid black;
 }

@@ -1,0 +1,76 @@
+.user-controls {
+  height: 6.4rem;
+}
+
+.user-controls .left,
+.user-controls .right {
+  gap: 3.2rem;
+}
+
+.user-controls .container {
+  flex-direction: row-reverse;
+}
+
+.user-controls .left button {
+  font-size: var(--fs-lg);
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--border-r-md);
+  transition: all 0.3s ease-in-out;
+}
+.user-controls .left button:hover {
+  background-color: var(--c-secondary);
+  color: var(--c-white);
+}
+.user-controls .left .signup {
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+.user-controls .left .login {
+  background-color: transparent;
+  color: var(--c-secondary);
+}
+
+.main-header-select button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+.main-header-select button {
+  color: white;
+}
+
+.main-header-select {
+  gap: 0.8rem;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .user-controls {
+    height: 4.4rem;
+    display: none;
+  }
+
+  .user-controls.active {
+    display: block;
+  }
+
+  .user-controls .left,
+  .user-controls .right {
+    gap: 1rem;
+  }
+
+  .user-controls .left button {
+    font-size: var(--fs-sm);
+  }
+  .user-controls .left button.signup {
+    padding: 0.2rem 0.6rem;
+  }
+}

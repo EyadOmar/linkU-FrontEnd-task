@@ -6,6 +6,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import App from './App.jsx';
 import en from './assets/locales/en/translation.json';
 import ar from './assets/locales/ar/translation.json';
+import 'flag-icon-css/css/flag-icons.css';
 import './reset.css';
 import './main.css';
 

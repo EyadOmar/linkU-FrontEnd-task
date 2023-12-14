@@ -1,0 +1,29 @@
+footer {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  padding-block: 2rem 10rem;
+}
+
+footer .links {
+  gap: 7rem;
+}
+
+@media (max-width: 768px) {
+  footer .links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+footer .links h3 {
+  font-size: var(--fs-xlg);
+  color: var(--c-secondary);
+  text-transform: capitalize;
+}
+
+footer .links ul {
+  margin-block: 0.5rem;
+  font-size: var(--fs-xlg);
+  list-style: disc;
+  padding-left: 2rem;
+}
