@@ -4,12 +4,21 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import App from './App.jsx';
+
+// english, arabic translations
 import en from './assets/locales/en/translation.json';
 import ar from './assets/locales/ar/translation.json';
+
+// Import Swiper styles
+import 'swiper/css';
+
+// flags icons
 import 'flag-icon-css/css/flag-icons.css';
+
 import './reset.css';
 import './main.css';
 
+// translation setup
 i18next
   .use(LanguageDetector)
   .use(initReactI18next)

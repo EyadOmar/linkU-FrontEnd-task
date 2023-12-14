@@ -45,6 +45,7 @@ body {
 body {
   font-family: var(--ff);
   font-size: var(--fs-md);
+  overflow: hidden;
 }
 
 .flex {
