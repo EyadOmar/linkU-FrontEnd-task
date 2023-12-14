@@ -27,5 +27,14 @@
   "choose-lang": "choose language",
   "choose-count": "choose countery",
   "choose-cat": "choose category",
-  "search": "search"
+  "search": "search",
+  "categories": "Categories",
+  "pet": "Pets",
+  "other": "Others",
+  "sport": "Sport Equipment",
+  "buss": "Bussiness & Manfacturing",
+  "decor": "Furniture & Decoration",
+  "services": "Services",
+  "jobs": "Jobs",
+  "fashion": "Fashion & Beauty Products"
 }

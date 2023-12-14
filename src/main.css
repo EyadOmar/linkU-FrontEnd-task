@@ -28,6 +28,9 @@ html {
 
 body {
   position: relative;
+  font-family: var(--ff);
+  font-size: var(--fs-md);
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
@@ -42,10 +45,8 @@ body {
   }
 }
 
-body {
-  font-family: var(--ff);
-  font-size: var(--fs-md);
-  overflow: hidden;
+section .container > h2 {
+  padding-block: 3.2rem;
 }
 
 .flex {
