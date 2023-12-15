@@ -55,6 +55,15 @@
   border-radius: var(--border-r-50);
   box-shadow: 0px 2px 4px 0px #00000026;
   background-color: var(--c-white);
+  background-image: url('/product-icons/favorite.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.product-card article .fav-btn.active {
+  background-image: url('/product-icons/heart.svg');
+  fill: var(--c-secondary);
 }
 
 .product-card p {

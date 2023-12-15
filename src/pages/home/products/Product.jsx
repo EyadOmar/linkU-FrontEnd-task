@@ -1,17 +1,20 @@
 /* eslint-disable react/prop-types */
-import Favorite from '/product-icons/favorite.svg';
 import LocPin from '/product-icons/Location-pin.svg';
 import Time from '/product-icons/time.svg';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './products.css';
 import Cookies from 'js-cookie';
-function Product({ img, price, fav, title, desc, loc, date }) {
+function Product({ prod }) {
+  const [isFav, setIsFav] = useState(prod.fav);
   const priceCurrency = Cookies.get('countery') === 'canada' ? 'CAD' : 'ريال';
-
   const cover = useRef(null);
 
+  const favClickHandler = () => {
+    setIsFav(!isFav);
+  };
+
   useEffect(() => {
-    cover.current.style.backgroundImage = `url(${img})`;
+    cover.current.style.backgroundImage = `url(${prod.img})`;
   }, []);
   return (
     <div className="product-card">
@@ -19,22 +22,23 @@ function Product({ img, price, fav, title, desc, loc, date }) {
       <article>
         <div className="row flex flex-between">
           <span className="price">
-            {price} {priceCurrency}
+            {prod.price} {priceCurrency}
           </span>
-          <button className="fav-btn">
-            <img src={Favorite} alt="" className={`${fav ? 'active' : ''}`} />
-          </button>
+          <button
+            className={`fav-btn ${isFav ? 'active' : ''}`}
+            onClick={favClickHandler}
+          ></button>
         </div>
-        <h3>{title}</h3>
-        <p>{desc}</p>
+        <h3>{prod.title}</h3>
+        <p>{prod.desc}</p>
         <div className="row flex flex-between">
           <span>
             <img src={LocPin} alt="" />
-            {loc}
+            {prod.loc}
           </span>
           <span>
             <img src={Time} alt="" />
-            {date} days
+            {prod.date} days
           </span>
         </div>
       </article>

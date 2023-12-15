@@ -18,7 +18,7 @@ function Products({ title }) {
         <Swiper {...sliderSettings} dir="ltr" slidesPerView={'auto'}>
           {productsData.map((prod, i) => (
             <SwiperSlide key={`${title}-prod-${i}`}>
-              <Product {...prod} />
+              <Product prod= {prod} />
             </SwiperSlide>
           ))}
         </Swiper>
