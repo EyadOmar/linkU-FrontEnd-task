@@ -1,6 +1,7 @@
 import HeroSlider from './hero/HeroSlider';
 import HeroImage from '../../assets/pics/hero.jpg';
 import Categories from './categories/Categories';
+import Products from './products/Products';
 
 function Home() {
   const heroImages = [HeroImage, HeroImage, HeroImage, HeroImage, HeroImage];
@@ -8,6 +9,7 @@ function Home() {
     <div className="home">
       <HeroSlider imgsSrc={heroImages} />
       <Categories />
+      <Products title="Electronics" />
     </div>
   );
 }
