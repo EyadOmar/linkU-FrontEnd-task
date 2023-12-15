@@ -47,6 +47,7 @@
 @media (max-width: 1199px) {
   .categories-cards a {
     flex-basis: 25%;
+    height: 200px;
   }
   .category-card {
     flex-direction: column;
@@ -55,5 +56,6 @@
     font-size: var(--fs-lg);
     padding: 0.5rem 2rem;
     text-align: center;
+    height: 100%;
   }
 }
