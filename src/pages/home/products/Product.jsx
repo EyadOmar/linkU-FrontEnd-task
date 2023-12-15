@@ -4,9 +4,11 @@ import Time from '/product-icons/time.svg';
 import { useEffect, useRef, useState } from 'react';
 import './products.css';
 import Cookies from 'js-cookie';
+import { useTranslation } from 'react-i18next';
 function Product({ prod }) {
+  const { t } = useTranslation();
   const [isFav, setIsFav] = useState(prod.fav);
-  const priceCurrency = Cookies.get('countery') === 'canada' ? 'CAD' : 'ريال';
+  const priceCurrency = Cookies.get('countery') === 'canada' ? '$' : 'ريال';
   const cover = useRef(null);
 
   const favClickHandler = () => {
@@ -29,16 +31,18 @@ function Product({ prod }) {
             onClick={favClickHandler}
           ></button>
         </div>
-        <h3>{prod.title}</h3>
-        <p>{prod.desc}</p>
+        <div className="prod-details">
+          <h3>{t(prod.title)}</h3>
+          <p>{t(prod.desc)}</p>
+        </div>
         <div className="row flex flex-between">
           <span>
             <img src={LocPin} alt="" />
-            {prod.loc}
+            {t(prod.loc)}
           </span>
           <span>
             <img src={Time} alt="" />
-            {prod.date} days
+            {prod.date} {t('days')}
           </span>
         </div>
       </article>

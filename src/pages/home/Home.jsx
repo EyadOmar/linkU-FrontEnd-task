@@ -9,7 +9,9 @@ function Home() {
     <div className="home">
       <HeroSlider imgsSrc={heroImages} />
       <Categories />
-      <Products title="Electronics" />
+      <Products title="other_tools" />
+      <Products title="properties" />
+      <Products title="mob_tabs" />
     </div>
   );
 }

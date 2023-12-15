@@ -45,7 +45,7 @@ body {
   }
 }
 
-section .container > h2 {
+section .container h2 {
   padding-block: 3.2rem;
 }
 
@@ -69,6 +69,7 @@ section .container > h2 {
   transform: translateX(-50%);
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 .drop-down-menu.active {
   top: 20px;

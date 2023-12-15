@@ -36,5 +36,10 @@
   "decor": "Furniture & Decoration",
   "services": "Services",
   "jobs": "Jobs",
-  "fashion": "Fashion & Beauty Products"
+  "fashion": "Fashion & Beauty Products",
+  "see_all": "See All",
+  "monitor": "Monitor",
+  "days": "Days",
+  "monitor_des": "It is a monitor",
+  "other_tools": "Other Tools"
 }

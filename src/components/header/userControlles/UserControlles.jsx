@@ -13,6 +13,8 @@ function UserControlles() {
 
   useEffect(() => {
     document.body.dir = currLang.dir || 'ltr';
+    if (document.body.dir === 'ltr') document.body.classList.remove('ar');
+    else document.body.classList.add('ar');
   }, [currLang]);
 
   return (
