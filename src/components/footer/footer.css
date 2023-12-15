@@ -102,9 +102,10 @@ footer button.to-top {
     padding-block: 2rem 15rem;
   }
   footer .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
   }
 
   footer .container > div {
@@ -118,6 +119,7 @@ footer button.to-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
 
   footer .download {
