@@ -144,3 +144,10 @@ footer button.to-top {
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  footer .download button a {
+    width: 100px;
+    font-size: var(--fs-sm);
+  }
+}
