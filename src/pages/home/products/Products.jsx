@@ -13,6 +13,7 @@ function Products({ title }) {
     className: 'slider',
     scrollbar: true,
     spaceBetween: 0,
+    loop: true,
   };
 
   return (

@@ -145,7 +145,7 @@ footer button.to-top {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   footer .download button a {
     width: 100px;
     font-size: var(--fs-sm);
